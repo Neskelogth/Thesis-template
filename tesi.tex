@@ -22,10 +22,10 @@
 % PDF/A filecontents
 \RequirePackage{filecontents}
 \begin{filecontents*}{\jobname.xmpdata}
-  \Title{Document’s title}
-  \Author{Author’s name}
-  \Language{it-IT}
-  \Subject{The abstract, or short description.}
+  \Title{Development of a neural network to identify CS:GO players}
+  \Author{Samuel Kostadinov}
+  \Language{en-EN}
+  % \Subject{The abstract, or short description.}
   \Keywords{keyword1\sep keyword2\sep keyword3}
 \end{filecontents*}
 
@@ -33,8 +33,7 @@
                a4paper,                 % carta A4
                twoside,                 % impagina per fronte-retro
                openright,               % inizio capitoli a destra
-               english,                 
-               italian,                 
+               english,                
                ]{book}    
 
 %**************************************************************
@@ -57,12 +56,12 @@
 \usepackage[utf8]{inputenc}             % codifica di input; anche [latin1] va bene
                                         % NOTA BENE! va accordata con le preferenze dell'editor
 
-\usepackage[english, italian]{babel}    % per scrivere in italiano e in inglese;
-                                        % l'ultima lingua (l'italiano) risulta predefinita
+\usepackage[english]{babel}  			% per scrivere in italiano e in inglese;
 
 \usepackage{bookmark}                   % segnalibri
 
 \usepackage{caption}                    % didascalie
+\usepackage{subcaption}
 
 \usepackage{chngpage,calc}              % centra il frontespizio
 
@@ -70,7 +69,7 @@
 
 \usepackage{emptypage}                  % pagine vuote senza testatina e piede di pagina
 
-\usepackage{epigraph}			% per epigrafi
+\usepackage{epigraph}					% per epigrafi
 
 \usepackage{eurosym}                    % simbolo dell'euro
 
@@ -93,12 +92,17 @@
 
 \usepackage{subfig}                     % sottofigure, sottotabelle
 
-\usepackage[italian]{varioref}          % riferimenti completi della pagina
+\usepackage[english]{varioref}          % riferimenti completi della pagina
 
 \usepackage{booktabs}                   % tabelle                                       
 \usepackage{tabularx}                   % tabelle di larghezza prefissata                                    
 \usepackage{longtable}                  % tabelle su più pagine                                        
 \usepackage{ltxtable}                   % tabelle su più pagine e adattabili in larghezza
+\usepackage{makecell}					% celle troppo lunghe
+
+\usepackage[demo]{graphicx}
+
+\usepackage{color, colortbl}			% colori righe tabelle
 
 \usepackage[toc, acronym]{glossaries}   % glossario
                                         % per includerlo nel documento bisogna:
@@ -107,7 +111,7 @@
                                         % 3. eseguire: makeindex -s tesi.ist -t tesi.alg -o tesi.acr tesi.acn
                                         % 4. compilare due volte tesi.tex.
 
-\usepackage[backend=biber,style=verbose-ibid,hyperref,backref]{biblatex}
+\usepackage[backend=biber, sorting=none,hyperref,backref]{biblatex}
                                         % eccellente pacchetto per la bibliografia; 
                                         % produce uno stile di citazione autore-anno; 
                                         % lo stile "numeric-comp" produce riferimenti numerici
@@ -127,7 +131,7 @@
 \input{inizio-fine/colophon}
 \input{inizio-fine/dedica}
 \input{inizio-fine/sommario}
-\input{inizio-fine/ringraziamenti}
+%\input{inizio-fine/ringraziamenti}
 \input{inizio-fine/indici}
 \cleardoublepage
 
@@ -140,8 +144,9 @@
 \input{capitoli/capitolo-3}             % Kick-Off
 \input{capitoli/capitolo-4}             % Concept Preview
 \input{capitoli/capitolo-5}             % Product Prototype
-\input{capitoli/capitolo-6}             % Product Design Freeze e SOP
-\input{capitoli/capitolo-7}             % Conclusioni
+%\input{capitoli/capitolo-6}             % Product Design Freeze e SOP
+\input{capitoli/capitolo-7}             % Discussioni
+\input{capitoli/capitolo-8}             % Conclusioni
 \appendix                               
 \input{capitoli/capitolo-A}             % Appendice A
 

@@ -7,11 +7,11 @@
 %**************************************************************
 
 % Autore
-\newcommand{\myName}{Riccardo Montagnin}                                    
-\newcommand{\myTitle}{Titolo della tesi}
+\newcommand{\myName}{Samuel Kostadinov}                                    
+\newcommand{\myTitle}{Development of a Neural Network to Identify CS:GO Players}
 
 % Tipo di tesi                   
-\newcommand{\myDegree}{Tesi di laurea}
+\newcommand{\myDegree}{Bachelor Degree}
 
 % Università             
 \newcommand{\myUni}{Università degli Studi di Padova}
@@ -23,20 +23,19 @@
 \newcommand{\myDepartment}{Dipartimento di Matematica "Tullio Levi-Civita"}
 
 % Titolo del relatore
-\newcommand{\profTitle}{Prof.}
+\newcommand{\profTitle}{Prof. }
 
 % Relatore
-\newcommand{\myProf}{Tullio Vardanega}
+\newcommand{\myProf}{Mauro Conti}
 
 % Luogo
 \newcommand{\myLocation}{Padova}
 
 % Anno accademico
-\newcommand{\myAA}{2016-2017}
+\newcommand{\myAA}{2020-2021}
 
 % Data discussione
-\newcommand{\myTime}{Luglio 2017}
-
+\newcommand{\myTime}{September 2021}
 
 %**************************************************************
 % Impostazioni di impaginazione
@@ -46,29 +45,32 @@
 \setlength{\parindent}{14pt}   % larghezza rientro della prima riga
 \setlength{\parskip}{0pt}   % distanza tra i paragrafi
 
+%**************************************************************
+% Impostazione colore righe tabelle da evidenziare
+%**************************************************************
+\definecolor{Gray}{gray}{0.7}
 
 %**************************************************************
 % Impostazioni di biblatex
 %**************************************************************
-\bibliography{bibliografia} % database di biblatex 
+\bibliography{bibliography} % database di biblatex 
 
 \defbibheading{bibliography} {
     \cleardoublepage
     \phantomsection 
-    \addcontentsline{toc}{chapter}{\bibname}
-    \chapter*{\bibname\markboth{\bibname}{\bibname}}
+    \addcontentsline{toc}{chapter}{Bibliography}
+    \chapter*{Bibliography \markboth{Bibliography}{Bibliography}}
 }
 
 \setlength\bibitemsep{1.5\itemsep} % spazio tra entry
 
 \DeclareBibliographyCategory{opere}
 \DeclareBibliographyCategory{web}
+\DeclareBibliographyCategory{proc}
 
-\addtocategory{opere}{womak:lean-thinking}
-\addtocategory{web}{site:agile-manifesto}
-
-\defbibheading{opere}{\section*{Riferimenti bibliografici}}
-\defbibheading{web}{\section*{Siti Web consultati}}
+\defbibheading{opere}{\section*{References}}
+\defbibheading{web}{\section*{Websites}}
+\defbibheading{proc}{\section*{Papers}}
 
 
 %**************************************************************
@@ -85,7 +87,7 @@
 %**************************************************************
 % Impostazioni di glossaries
 %**************************************************************
-\input{glossario} % database di termini
+\input{glossary} % database di termini
 \makeglossaries
 
 
@@ -136,9 +138,9 @@
 %**************************************************************
 % Impostazioni di itemize
 %**************************************************************
-\renewcommand{\labelitemi}{$\ast$}
+%\renewcommand{\labelitemi}{$\ast$}
 
-%\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemi}{$\bullet$}
 %\renewcommand{\labelitemii}{$\cdot$}
 %\renewcommand{\labelitemiii}{$\diamond$}
 %\renewcommand{\labelitemiv}{$\ast$}
@@ -185,9 +187,9 @@
     gi-ral-din
 }
 
-\newcommand{\sectionname}{sezione}
-\addto\captionsitalian{\renewcommand{\figurename}{Figura}
-                       \renewcommand{\tablename}{Tabella}}
+\newcommand{\sectionname}{section}
+\addto\captionsitalian{\renewcommand{\figurename}{Figure}
+                       \renewcommand{\tablename}{Table}}
 
 \newcommand{\glsfirstoccur}{\ap{{[g]}}}
 
