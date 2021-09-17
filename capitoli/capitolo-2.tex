@@ -3,11 +3,118 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Processi e metodologie}
+\chapter{Related work}
 \label{cap:processi-metodologie}
 %**************************************************************
 
-\intro{Brevissima introduzione al capitolo}\\
+\intro{In this chapter, there is an overlook of the related work. In section \ref{sec:games} we start by presenting some works related to video games. 
+Then, in section \ref{sec:csgos} we proceed to examine the studies related to the specific game CS:GO.
+In section \ref{sec:plrec} we explore literature around the topic of player recognition. 
+Lastly, in section \ref{sec:con} there are some considerations about the work we did.}
 
 %**************************************************************
-\section{Processo sviluppo prodotto}
+
+\section{\label{sec:games}Video-games-related work}
+
+	Video games are a growing phenomenon, and thus is not surprising that many studies involve them. 
+	Given their diversity, the research community explored several topics, such as their impact on health or behaviours. 
+	In the following list, there are some examples:
+	
+	\begin{itemize}
+	
+		\item \textbf{Video games and health}:\\				
+			One of the first considered fields is video games and health. 
+			Griffiths, for example, explores how playing video games is not only safe for most players but can also help in some situations, such as pain management \cite{2005331}.
+	
+		\item \textbf{Video games and education}:\\
+			Another aspect is education and its relation to video games. 
+			Squire examines the history of games in educational research, trying to understand the true potential of educational video games and thinks that educators underestimate the potential of educational video games \cite{14n205}. 
+				
+		\item \textbf{Video games and thinking}:\\
+			In 2008, Gee discusses how video games can illuminate the nature of human thinking and problem-solving as situated and embodied. 
+			The author achieves this goal by exploring why people became more interested in video games to study human thinking, moving then to discuss the ``projective stance'', 
+			a kind of embodied thinking frequent in many video games players \cite{10.1177/1555412008317309}.
+
+		\item \textbf{Video games art}:\\
+			Some papers discuss the question: \textsc{\textit{Are video games art?}}. 
+			In 2008, Smuts sustained that some video games should be considered art, accordingly to historical, aesthetic, institutional, representational, and expressive theories of art, while others cannot \cite{1555412008317309}.
+	
+		\item \textbf{Violence in video games}:\\
+			One popular topic of study is violence and its relation to video games. 
+			Filiz Öztütüncü Doğan stated that violent video games pollute the cultural environment of the children, stunt their brain development, and provoke aggressive behaviours~\cite{10.1177/155541200831730}.
+			
+		\item \textbf{Violent video games and real-world violence}:\\
+			On the other side, Markey, alongside with other authors, stated that no proof suggested a relation between violence in video games and real-world violence in the United States \cite{10.1037/ppm0000030}.
+				
+		\item \textbf{Positive and negative effects}:\\
+			Halbrook, with the help of other authors, examine how the effect of video games depends also on variables external to video games \cite{10.1177/1745691619863807}. 
+			
+	\end{itemize}
+
+\section{\label{sec:csgos}CS:GO related works}
+	
+	Giving the popularity and complexity of CS:GO, several studies have been conducted in the literature.
+	In the following list, there are some examples:
+		
+	\begin{itemize}
+		
+		\item \textbf{CS:GO economy}:\\
+			Since CS:GO allows, via \gls{Steam}, to barter \gls{Skin} for real money, exist communities devoted to this kind of exchange. 
+			Yamamoto and McArthur illustrate how the players utilize this kind of exchanges to earn money. 
+			Moreover, they identify the most decisive factors that determine the \gls{Skin}' value \cite{7377220}.
+			
+		\item \textbf{Analysis of the game}:\\
+			Rizani and Iida focus more on the analysis of the game and set the objective of the work in understanding the nature of \gls{FPS} games, focusing on the gameplay and the round system. 
+			The selected game is CS:GO because of its popularity and data availability \cite{8605213}. 
+				
+		\item \textbf{Player identity construction}:\\
+			Ståhl and Rusk explore the player identity (co)construction, trying to answer two questions:
+				\setlength{\parindent}{5ex}
+				
+				\emph{What tools for (co)constructing player identity in CS: GO did participants employ?}
+				
+				\emph{What player identities are (co)constructed using these tools?} 
+				
+				\noindent The authors found that the tools employed for identity (co)construction in CS:GO are: \emph{choice of weapon, weapon skill, weapon customization, stats/rank} and \emph{language use}.
+				They also discovered that, although there are individual variances, the identities (co)constructed orient towards a perceived competent player identity shaped by technomasculine norms \cite{1604-7982}.				
+			
+		\item \textbf{Game experience effects}:\\
+			Harsono and his colleagues focused on understanding Game Experience (GX). 
+			In particular, how GX could influence the player's emotions while playing the game~\cite{8834521}.
+				
+		\item \textbf{Kill-Death actions and game organization}:\\
+			Rusk and Ståhl wrote an article in which they try to understand the social organization of the game based on the in-game events of kills and deaths. 
+			Their conclusion suggests how kills and deaths are part of the basic game's mechanics~\cite{2729533}.
+			
+		\item \textbf{How to value players action}:\\
+			Xenopoulos, Doraiswamy, and Silva introduced a context-aware framework to value players' actions as a way to evaluate CS:GO players.
+			The framework can highly successfully identify high-impact actions based on the winning chances of the team \cite{9378154}.
+				
+		\item \textbf{Winning team prediction}:\\
+			In 2017 Makarov realized some machine learning models to predict the winning team of a match in DOTA 2 and CS:GO. 
+			After obtaining the prediction the result was compared with TrueSkill, a skill-based ranking system developed by Microsoft \cite{10.1007/978-3-319-73013-4_17}.
+				
+	\end{itemize}
+		
+\section{\label{sec:plrec}Player recognition related works}
+	
+	The following list examines some works that focused on player recognition, even though there are not many. 
+	\begin{itemize}
+	
+		\item \textbf{Recognizing pro players}: \\
+			In 2019, applying machine learning techniques and using smart-chairs to gather data about the players, Smerdov proved that is possible to identify if an e-sport athlete is a professional or not \cite{8767295}. 
+		
+		\item \textbf{Player recognition on DOTA 2}:\\
+			In 2020 Conti and Tricomi demonstrated that a player could be identified, in DOTA 2, by its play style through a deep learning model. 
+			The model, processing game data, could recognize a given player out of 50 \cite{10.1007/978-3-030-62974-8_22}.
+		
+	\end{itemize}
+		
+%*****************************************************
+
+\section{\label{sec:con}Considerations about the work}
+
+	Although there is some previous work done on CS:GO, to the best of our knowledge, we are the first to recognize a player using their play style. 
+	Previous studies focused mostly on the game itself, as shown in \ref{sec:csgos}, but there are just a few that use machine learning. 
+	These studies focus on predicting winning teams or identifying pro players. 
+	The most similar study we could find is the one on DOTA 2, because the work we did is its natural extension.

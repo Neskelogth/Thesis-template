@@ -3,51 +3,56 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Introduzione}
+\chapter{Introduction}
 \label{cap:introduzione}
 %**************************************************************
 
-Introduzione al contesto applicativo.\\
-
-\noindent Esempio di utilizzo di un termine nel glossario \\
-\gls{api}. \\
-
-\noindent Esempio di citazione in linea \\
-\cite{site:agile-manifesto}. \\
-
-\noindent Esempio di citazione nel pie' di pagina \\
-citazione\footcite{womak:lean-thinking} \\
-
-%**************************************************************
-\section{L'azienda}
-
-Descrizione dell'azienda.
-
-%**************************************************************
-\section{L'idea}
-
-Introduzione all'idea dello stage.
-
-%**************************************************************
-\section{Organizzazione del testo}
-
-\begin{description}
-    \item[{\hyperref[cap:processi-metodologie]{Il secondo capitolo}}] descrive ...
-    
-    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive ...
-\end{description}
-
-Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
-\begin{itemize}
-	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
-	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
-\end{itemize}
+	In the last few decades, video games became more important than anyone would have imagined. 
+	As of August 2021, there are more than 3.2 billion gamers on Earth \cite{site:statista}. 
+	That means about 40\% of the population plays video games. 
+	In the video games panorama, the online portion is vastly widespread. 
+	Some examples, taken from the most popular online games in 2021 are:
+	League of Legends (LOL), 
+	PlayerUnknown's Battlegrounds(PUBG), 
+	Fortnite,
+	Counter-Strike: Global Offensive (CS:GO), 
+	Hearthstone and 
+	Defense of the Ancients 2 (DOTA 2) \cite{site:firstsportz}.
+	The only common thing between these games is their online nature. 
+	The games range in a variety of genres, for example
+	card games like Hearthstone, 
+	\gls{FPS} (FPS) like CS:GO, 
+	Multiplayer Online Battle Arena (MOBA) like DOTA 2 and LOL, 
+	Battle Royale like PUBG, or
+	Third-Person Shooter (TPS) like Fortnite.
+	
+	The fact that people play online opens the way to harmful behaviours because of the interactions with strangers. 
+	There is a lot of people interested in stealing personal data from others. 
+	All major video game publishers take countermeasures, such as \gls{Ban}, to mitigate the problem. 
+	Banning a user, though, does not prevent the same person from starting a new account. 
+	A company has no way to understand if a user that created a new profile was banned before. 
+	To resolve this issue, in PvP: Profiling versus Player \cite{10.1007/978-3-030-62974-8_22} the authors proved that it is possible to identify a player by exploiting their play style. 
+	The neural network the authors of the paper realized reached 96\% accuracy in recognizing a given player by the play style in DOTA 2.
+	So the recognizing system proved to be working on DOTA 2, but there was no evidence of the fact that works also on other video games.
+	Given the difference of each video game, it is hard to identify some play style elements that are common through different games. 
+	In this work, the goal is to prove that is possible to determine the identity of a given player in Counter-Strike: Global Offensive. 
+	Proving that there is the possibility to identify a player on CS:GO would be very important because it would prove that there is the possibility to recognize players in different genres of video games. 
+	The two games, DOTA 2 and CS:GO, differ from each other in many aspects:
+	the type of game,
+	the objectives to carry out through the match, and
+	the vision that the player has
+	are just some of the differences.
+	The work tries to find some features that could be important to understand the play style. 
+	This process, starting from the logs of the parsed matches, identified some features that can represent, in CS:GO, the play style of a given person.
+	Some example of feature, in a \gls{FPS} that could be part of a unique play style are:
+	the movement of the mouse, 
+	the way of moving in the map, 
+	the number of jumps, 
+	the number of all the actions in the game, 
+	the number of kills, 
+	and the number of assists.\\
+	We started with the logs of the parsed matches and preprocessed them to be used in a machine learning project. 
+	We reproduced the model used for the DOTA 2 project and used it to predict the player given the match. 
+	We trained the model using 50 players and 100 games each. 
+	As a result, we got a model that scored 92\% accuracy in the validation set.
+	The conclusion we can draw from this study is that the play style can be considered biometric also in CS:GO, and possibly in other video games, as long as there are features to represent it.

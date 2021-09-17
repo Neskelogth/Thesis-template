@@ -3,18 +3,29 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Conclusioni}
+\chapter{Final remarks}
 \label{cap:conclusioni}
 %**************************************************************
 
-%**************************************************************
-\section{Consuntivo finale}
+\section {Future works}
 
-%**************************************************************
-\section{Raggiungimento degli obiettivi}
+	In this work, we proved that it is possible to identify a player exploiting the play style in CS:GO. 
+	Due to the short time we had, though, we could not experiment a lot. \\
+	There are some possible future continuations of this work that aim to extend what we did. 
+	One of these is, for example, trying with other neural network architectures and see if changing some hyperparameters (like the number of LSTM units) can benefit the accuracy. 
+	Another thing that should be considered is that we worked only with professional players. 
+	It would be interesting to see if the accuracy changes if there are non-professional players among the set of selected players. 
+	Moreover, we decided to use the same kind of interpolation for all the players but would be interesting to try another type of interpolation or try to adapt the interpolation for every player. 
+	Another hint for future experiments could be to study the correlation between the sequence's length and the prediction's accuracy. 
+	Once this study is complete, its result could be used to see if other architectures can perform better with shorter sequences. 
+	Furthermore, a hint would be trying to understand how to face unknown players. 
+	As the last indication, we suggest finding a correlation, if present, between the play style and private data, as in the DOTA 2 work. \\
+	As a natural continuation of the work, we suggest trying to involve other video games, possibly belonging to other genres. 
+	Finally, some transfer learning techniques can be applied to understand if the play style is game-dependent or not. 
 
-%**************************************************************
-\section{Conoscenze acquisite}
-
-%**************************************************************
-\section{Valutazione personale}
+\section{Conclusion}
+	
+	In this thesis, we proved that deep learning neural networks are able to recognize a player by the play style, which can be considered biometric. 
+	The consequences are various, first of all, scammer recognition. 
+	Given that this work is the continuation of another study, we indirectly proved that there is more than one video game in which a player's play style can be considered biometric. 
+	Being unique for every human, the play style can be used in the authentication process.
